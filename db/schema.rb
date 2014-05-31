@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140531180608) do
+ActiveRecord::Schema.define(version: 20140531204048) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,6 +26,16 @@ ActiveRecord::Schema.define(version: 20140531180608) do
     t.date     "early_voting_starts"
     t.time     "early_voting_opens_at"
     t.time     "early_voting_closes_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "voters", force: true do |t|
+    t.string   "name",       null: false
+    t.string   "email",      null: false
+    t.string   "address"
+    t.integer  "zip"
+    t.date     "birthday",   null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
