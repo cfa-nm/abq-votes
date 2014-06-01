@@ -1,0 +1,8 @@
+en:
+  voters:
+    create:
+      success_message: You are now subscribed.
+  helpers:
+    submit:
+      voter:
+        create: Sign Up

@@ -1,0 +1,14 @@
+<%= simple_form_for @voter, url: voter_path do |f| %>
+  <%= f.input :name %>
+  <%= f.input :email %>
+
+  <%= f.input :address %>
+  <%= f.input :zip %>
+
+  <%= f.input :birthday, as: :date,
+              start_year: 15.years.ago.year,
+              end_year: 90.years.ago.year,
+              max_years_allowed: 75 %>
+
+  <%= f.button :submit %>
+<% end %>
