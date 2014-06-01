@@ -20,4 +20,5 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  site_name: 'ABQ Votes'
   thank_you: 'thank you'

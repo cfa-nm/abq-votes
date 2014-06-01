@@ -1,0 +1,6 @@
+body > header {
+  @include outer-container;
+  border-bottom: 3px solid $base-border-color;
+  text-align: center;
+  margin-bottom: $gutter;
+}

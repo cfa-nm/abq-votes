@@ -1,0 +1,22 @@
+@import 'normalize-rails';
+
+@import 'bourbon';
+@import 'neat-helpers';
+
+@import 'variables';
+@import 'grid-settings';
+
+@import 'neat';
+
+@import 'extends/extends';
+@import 'mixins/mixins';
+@import 'typography';
+@import 'forms';
+@import 'tables';
+@import 'lists';
+@import 'flashes';
+@import 'components/components';
+
+body > section {
+  @include outer-container;
+}
