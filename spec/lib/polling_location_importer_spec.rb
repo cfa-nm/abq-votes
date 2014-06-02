@@ -43,4 +43,51 @@ describe PollingLocationImporter do
     expect(open.hour).to eql 7
     expect(close.hour).to eql 19
   end
+
+  context 'with early voting' do
+    let(:data) { <<-JSON }
+      { "features": [{
+        "attributes": {
+          "OBJECTID": 5,
+          "MVCName": "Shops @ 98th and Central",
+          "Address": "120 98th St NW Suite A5",
+          "Zip": 87121,
+          "Geocode": "120 98th St NW",
+          "Voting": "Early Voting and Election Day",
+          "OpenTimes": "7:00 a.m. to 7:00 p.m.",
+          "OpenDate": "Early Voting begins October 23",
+          "UniqueID": 5,
+          "ElectionDayTime": "7:00 a.m. to 7:00 p.m."
+        }
+      }]}
+    JSON
+
+    it 'creates a record with early voting' do
+      location = importer.build_all.first
+      expect(location).to have_early_voting
+    end
+  end
+
+  context 'with closed locations' do
+    let(:data) { <<-JSON }
+      { "features": [{
+        "attributes": {
+          "OBJECTID": 31,
+          "MVCName": "Office of the City Clerk",
+          "Address": "600 2nd St NW",
+          "Zip": 87102,
+          "Geocode": "600 2nd St NW",
+          "Voting": "Early Voting",
+          "OpenTimes": "Closed",
+          "OpenDate": "Early Voting begins October 23",
+          "UniqueID": 31,
+          "ElectionDayTime": "Closed"
+        }
+      }]}
+    JSON
+
+    it 'does not create a record' do
+      expect(importer.build_all).to be_empty
+    end
+  end
 end

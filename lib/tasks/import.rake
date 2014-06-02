@@ -5,11 +5,11 @@ namespace :import do
   task :polling_locations => :environment do
     require 'polling_location_importer'
 
-    url = '/arcgis/rest/services/public/Voting2013/MapServer/0/query?where=1%3D1&geometryType=esriGeometryEnvelope&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=true&returnIdsOnly=false&returnCountOnly=false&returnZ=false&returnM=false&f=pjson'
-    Net::HTTP.start('coagisweb.cabq.gov') do |http|
-      resp = http.get url
-      json = resp.body
-      PollingLocationImporter.new(json).create_all
-    end
+    url = URI.parse('http://coagisweb.cabq.gov')
+    url.path = '/arcgis/rest/services/public/Voting2013/MapServer/0/query'
+    url.query = { where: '1=1', outFields: '*', f: 'json' }.to_query
+
+    json = Net::HTTP.get(url)
+    PollingLocationImporter.new(json).create_all
   end
 end
