@@ -1,0 +1,2161 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://maps.googleapis.com/maps/api/geocode/json?address=123%20Main%20St.&language=en&sensor=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 10 Jun 2014 04:50:56 GMT
+      Expires:
+      - Wed, 11 Jun 2014 04:50:56 GMT
+      Cache-Control:
+      - public, max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Alternate-Protocol:
+      - 80:quic
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "123",
+                       "short_name" : "123",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Main Street",
+                       "short_name" : "Main St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Little Mountain",
+                       "short_name" : "Little Mountain",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Newberry County",
+                       "short_name" : "Newberry County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "South Carolina",
+                       "short_name" : "SC",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "29075",
+                       "short_name" : "29075",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "123 Main Street, Little Mountain, SC 29075, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 34.1987161,
+                          "lng" : -81.4061294
+                       },
+                       "southwest" : {
+                          "lat" : 34.1987022,
+                          "lng" : -81.406137
+                       }
+                    },
+                    "location" : {
+                       "lat" : 34.1987161,
+                       "lng" : -81.406137
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 34.2000581302915,
+                          "lng" : -81.40478421970849
+                       },
+                       "southwest" : {
+                          "lat" : 34.1973601697085,
+                          "lng" : -81.40748218029151
+                       }
+                    }
+                 },
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "123",
+                       "short_name" : "123",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Main Street",
+                       "short_name" : "Main St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "North Woodstock",
+                       "short_name" : "North Woodstock",
+                       "types" : [ "sublocality", "political" ]
+                    },
+                    {
+                       "long_name" : "Woodstock",
+                       "short_name" : "Woodstock",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Grafton County",
+                       "short_name" : "Grafton County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "New Hampshire",
+                       "short_name" : "NH",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "03262",
+                       "short_name" : "03262",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "123 Main Street, North Woodstock, NH 03262, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 44.0320226,
+                          "lng" : -71.6866466
+                       },
+                       "southwest" : {
+                          "lat" : 44.0320218,
+                          "lng" : -71.68666499999999
+                       }
+                    },
+                    "location" : {
+                       "lat" : 44.0320226,
+                       "lng" : -71.68666499999999
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 44.0333711802915,
+                          "lng" : -71.68530681970849
+                       },
+                       "southwest" : {
+                          "lat" : 44.0306732197085,
+                          "lng" : -71.68800478029149
+                       }
+                    }
+                 },
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "123",
+                       "short_name" : "123",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Main Street",
+                       "short_name" : "Main St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Schenevus",
+                       "short_name" : "Schenevus",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Maryland",
+                       "short_name" : "Maryland",
+                       "types" : [ "administrative_area_level_3", "political" ]
+                    },
+                    {
+                       "long_name" : "Otsego County",
+                       "short_name" : "Otsego County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "New York",
+                       "short_name" : "NY",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "12155",
+                       "short_name" : "12155",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "123 Main Street, Schenevus, NY 12155, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 42.5454216,
+                          "lng" : -74.8409704
+                       },
+                       "southwest" : {
+                          "lat" : 42.5454096,
+                          "lng" : -74.84097899999999
+                       }
+                    },
+                    "location" : {
+                       "lat" : 42.5454216,
+                       "lng" : -74.84097899999999
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 42.5467645802915,
+                          "lng" : -74.83962571970849
+                       },
+                       "southwest" : {
+                          "lat" : 42.5440666197085,
+                          "lng" : -74.8423236802915
+                       }
+                    }
+                 },
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "123",
+                       "short_name" : "123",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Main Street",
+                       "short_name" : "Main St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "East Worcester",
+                       "short_name" : "East Worcester",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Worcester",
+                       "short_name" : "Worcester",
+                       "types" : [ "administrative_area_level_3", "political" ]
+                    },
+                    {
+                       "long_name" : "Otsego County",
+                       "short_name" : "Otsego County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "New York",
+                       "short_name" : "NY",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "12064",
+                       "short_name" : "12064",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "123 Main Street, East Worcester, NY 12064, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 42.6123515,
+                          "lng" : -74.6871496
+                       },
+                       "southwest" : {
+                          "lat" : 42.6123424,
+                          "lng" : -74.6871632
+                       }
+                    },
+                    "location" : {
+                       "lat" : 42.6123515,
+                       "lng" : -74.6871632
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 42.61369593029149,
+                          "lng" : -74.6858074197085
+                       },
+                       "southwest" : {
+                          "lat" : 42.6109979697085,
+                          "lng" : -74.6885053802915
+                       }
+                    }
+                 },
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "123",
+                       "short_name" : "123",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Main Street",
+                       "short_name" : "Main St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Oneonta",
+                       "short_name" : "Oneonta",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Otsego County",
+                       "short_name" : "Otsego County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "New York",
+                       "short_name" : "NY",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "13820",
+                       "short_name" : "13820",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "123 Main Street, Oneonta, NY 13820, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 42.45247759999999,
+                          "lng" : -75.06362369999999
+                       },
+                       "southwest" : {
+                          "lat" : 42.4524707,
+                          "lng" : -75.0636396
+                       }
+                    },
+                    "location" : {
+                       "lat" : 42.45247759999999,
+                       "lng" : -75.0636396
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 42.4538231302915,
+                          "lng" : -75.06228266970849
+                       },
+                       "southwest" : {
+                          "lat" : 42.4511251697085,
+                          "lng" : -75.06498063029152
+                       }
+                    }
+                 },
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "123",
+                       "short_name" : "123",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Main Street",
+                       "short_name" : "Main St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Worcester",
+                       "short_name" : "Worcester",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Worcester",
+                       "short_name" : "Worcester",
+                       "types" : [ "administrative_area_level_3", "political" ]
+                    },
+                    {
+                       "long_name" : "Otsego County",
+                       "short_name" : "Otsego County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "New York",
+                       "short_name" : "NY",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "12197",
+                       "short_name" : "12197",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "123 Main Street, Worcester, NY 12197, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 42.5915043,
+                          "lng" : -74.7507207
+                       },
+                       "southwest" : {
+                          "lat" : 42.5914913,
+                          "lng" : -74.7507262
+                       }
+                    },
+                    "location" : {
+                       "lat" : 42.5915043,
+                       "lng" : -74.7507262
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 42.5928467802915,
+                          "lng" : -74.7493744697085
+                       },
+                       "southwest" : {
+                          "lat" : 42.5901488197085,
+                          "lng" : -74.75207243029151
+                       }
+                    }
+                 },
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "123",
+                       "short_name" : "123",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Main Street",
+                       "short_name" : "Main St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Madawaska",
+                       "short_name" : "Madawaska",
+                       "types" : [ "neighborhood", "political" ]
+                    },
+                    {
+                       "long_name" : "Madawaska",
+                       "short_name" : "Madawaska",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Aroostook County",
+                       "short_name" : "Aroostook County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Maine",
+                       "short_name" : "ME",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "04756",
+                       "short_name" : "04756",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "123 Main Street, Madawaska, ME 04756, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 47.3527265,
+                          "lng" : -68.2982945
+                       },
+                       "southwest" : {
+                          "lat" : 47.3527142,
+                          "lng" : -68.2982973
+                       }
+                    },
+                    "location" : {
+                       "lat" : 47.3527142,
+                       "lng" : -68.2982973
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 47.3540693302915,
+                          "lng" : -68.2969469197085
+                       },
+                       "southwest" : {
+                          "lat" : 47.3513713697085,
+                          "lng" : -68.29964488029151
+                       }
+                    }
+                 },
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "123",
+                       "short_name" : "123",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Main Street",
+                       "short_name" : "Main St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Van Buren",
+                       "short_name" : "Van Buren",
+                       "types" : [ "neighborhood", "political" ]
+                    },
+                    {
+                       "long_name" : "Van Buren",
+                       "short_name" : "Van Buren",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Aroostook County",
+                       "short_name" : "Aroostook County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Maine",
+                       "short_name" : "ME",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "04785",
+                       "short_name" : "04785",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "123 Main Street, Van Buren, ME 04785, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 47.15660940000001,
+                          "lng" : -67.93469349999999
+                       },
+                       "southwest" : {
+                          "lat" : 47.1566006,
+                          "lng" : -67.93470669999999
+                       }
+                    },
+                    "location" : {
+                       "lat" : 47.1566006,
+                       "lng" : -67.93470669999999
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 47.1579539802915,
+                          "lng" : -67.93335111970849
+                       },
+                       "southwest" : {
+                          "lat" : 47.1552560197085,
+                          "lng" : -67.9360490802915
+                       }
+                    }
+                 },
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "123",
+                       "short_name" : "123",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Main Street",
+                       "short_name" : "Main St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "New Paltz",
+                       "short_name" : "New Paltz",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Gardiner",
+                       "short_name" : "Gardiner",
+                       "types" : [ "administrative_area_level_3", "political" ]
+                    },
+                    {
+                       "long_name" : "Ulster County",
+                       "short_name" : "Ulster County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "New York",
+                       "short_name" : "NY",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "12561",
+                       "short_name" : "12561",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "123 Main Street, New Paltz, NY 12561, USA",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 41.679839,
+                       "lng" : -74.15101570000002
+                    },
+                    "location_type" : "ROOFTOP",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 41.6811879802915,
+                          "lng" : -74.14966671970852
+                       },
+                       "southwest" : {
+                          "lat" : 41.67849001970851,
+                          "lng" : -74.15236468029153
+                       }
+                    }
+                 },
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "123",
+                       "short_name" : "123",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Main Street",
+                       "short_name" : "Main St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Gardiner",
+                       "short_name" : "Gardiner",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Gardiner",
+                       "short_name" : "Gardiner",
+                       "types" : [ "administrative_area_level_3", "political" ]
+                    },
+                    {
+                       "long_name" : "Ulster County",
+                       "short_name" : "Ulster County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "New York",
+                       "short_name" : "NY",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "12525",
+                       "short_name" : "12525",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "123 Main Street, Gardiner, NY 12525, USA",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 41.67984310000001,
+                       "lng" : -74.1509767
+                    },
+                    "location_type" : "ROOFTOP",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 41.68119208029151,
+                          "lng" : -74.1496277197085
+                       },
+                       "southwest" : {
+                          "lat" : 41.67849411970851,
+                          "lng" : -74.15232568029151
+                       }
+                    }
+                 },
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "123",
+                       "short_name" : "123",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Main Street",
+                       "short_name" : "Main St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Chatham",
+                       "short_name" : "Chatham",
+                       "types" : [ "neighborhood", "political" ]
+                    },
+                    {
+                       "long_name" : "Chatham",
+                       "short_name" : "Chatham",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Barnstable County",
+                       "short_name" : "Barnstable County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Massachusetts",
+                       "short_name" : "MA",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "02633",
+                       "short_name" : "02633",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "123 Main Street, Chatham, MA 02633, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 41.6735675,
+                          "lng" : -69.9487319
+                       },
+                       "southwest" : {
+                          "lat" : 41.6735651,
+                          "lng" : -69.94874999999999
+                       }
+                    },
+                    "location" : {
+                       "lat" : 41.6735675,
+                       "lng" : -69.94874999999999
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 41.6749152802915,
+                          "lng" : -69.94739196970849
+                       },
+                       "southwest" : {
+                          "lat" : 41.6722173197085,
+                          "lng" : -69.9500899302915
+                       }
+                    }
+                 },
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "123",
+                       "short_name" : "123",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Main Street",
+                       "short_name" : "Main St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "West Dennis",
+                       "short_name" : "West Dennis",
+                       "types" : [ "neighborhood", "political" ]
+                    },
+                    {
+                       "long_name" : "Dennis",
+                       "short_name" : "Dennis",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Barnstable County",
+                       "short_name" : "Barnstable County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Massachusetts",
+                       "short_name" : "MA",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "02670",
+                       "short_name" : "02670",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "123 Main Street, West Dennis, MA 02670, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 41.66439880000001,
+                          "lng" : -70.17691239999999
+                       },
+                       "southwest" : {
+                          "lat" : 41.664385,
+                          "lng" : -70.17691260000001
+                       }
+                    },
+                    "location" : {
+                       "lat" : 41.664385,
+                       "lng" : -70.17691239999999
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 41.66574088029151,
+                          "lng" : -70.1755635197085
+                       },
+                       "southwest" : {
+                          "lat" : 41.66304291970851,
+                          "lng" : -70.17826148029151
+                       }
+                    }
+                 },
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "123",
+                       "short_name" : "123",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Main Street",
+                       "short_name" : "Main St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Dennis Port",
+                       "short_name" : "Dennis Port",
+                       "types" : [ "sublocality", "political" ]
+                    },
+                    {
+                       "long_name" : "Dennis",
+                       "short_name" : "Dennis",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Barnstable County",
+                       "short_name" : "Barnstable County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Massachusetts",
+                       "short_name" : "MA",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "02639",
+                       "short_name" : "02639",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "123 Main Street, Dennis Port, MA 02639, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 41.66728010000001,
+                          "lng" : -70.14228059999999
+                       },
+                       "southwest" : {
+                          "lat" : 41.6672664,
+                          "lng" : -70.1422827
+                       }
+                    },
+                    "location" : {
+                       "lat" : 41.6672664,
+                       "lng" : -70.14228059999999
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 41.6686222302915,
+                          "lng" : -70.14093266970849
+                       },
+                       "southwest" : {
+                          "lat" : 41.6659242697085,
+                          "lng" : -70.1436306302915
+                       }
+                    }
+                 },
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "123",
+                       "short_name" : "123",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Main Street",
+                       "short_name" : "Main St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "West Harwich",
+                       "short_name" : "West Harwich",
+                       "types" : [ "neighborhood", "political" ]
+                    },
+                    {
+                       "long_name" : "Northwest Harwich",
+                       "short_name" : "Northwest Harwich",
+                       "types" : [ "sublocality", "political" ]
+                    },
+                    {
+                       "long_name" : "Harwich",
+                       "short_name" : "Harwich",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Barnstable County",
+                       "short_name" : "Barnstable County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Massachusetts",
+                       "short_name" : "MA",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "02671",
+                       "short_name" : "02671",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "123 Main Street, West Harwich, MA 02671, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 41.669073,
+                          "lng" : -70.11129369999999
+                       },
+                       "southwest" : {
+                          "lat" : 41.6690595,
+                          "lng" : -70.1112974
+                       }
+                    },
+                    "location" : {
+                       "lat" : 41.6690595,
+                       "lng" : -70.1112974
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 41.6704152302915,
+                          "lng" : -70.10994656970848
+                       },
+                       "southwest" : {
+                          "lat" : 41.6677172697085,
+                          "lng" : -70.11264453029149
+                       }
+                    }
+                 },
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "123",
+                       "short_name" : "123",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Main Street",
+                       "short_name" : "Main St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Green Bay",
+                       "short_name" : "Green Bay",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Brown County",
+                       "short_name" : "Brown County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Wisconsin",
+                       "short_name" : "WI",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "54301",
+                       "short_name" : "54301",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "123 Main Street, Green Bay, WI 54301, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 44.51813689999999,
+                          "lng" : -88.013604
+                       },
+                       "southwest" : {
+                          "lat" : 44.518124,
+                          "lng" : -88.01360729999999
+                       }
+                    },
+                    "location" : {
+                       "lat" : 44.51813689999999,
+                       "lng" : -88.013604
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 44.5194794302915,
+                          "lng" : -88.01225666970848
+                       },
+                       "southwest" : {
+                          "lat" : 44.5167814697085,
+                          "lng" : -88.0149546302915
+                       }
+                    }
+                 },
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "123",
+                       "short_name" : "123",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Main Street",
+                       "short_name" : "Main St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Frenchville",
+                       "short_name" : "Frenchville",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Aroostook County",
+                       "short_name" : "Aroostook County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Maine",
+                       "short_name" : "ME",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "04745",
+                       "short_name" : "04745",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "123 Main Street, Frenchville, ME 04745, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 47.3232884,
+                          "lng" : -68.38231329999999
+                       },
+                       "southwest" : {
+                          "lat" : 47.323287,
+                          "lng" : -68.3823316
+                       }
+                    },
+                    "location" : {
+                       "lat" : 47.323287,
+                       "lng" : -68.38231329999999
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 47.3246366802915,
+                          "lng" : -68.38097346970849
+                       },
+                       "southwest" : {
+                          "lat" : 47.3219387197085,
+                          "lng" : -68.3836714302915
+                       }
+                    }
+                 },
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "123",
+                       "short_name" : "123",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Main Street",
+                       "short_name" : "Main St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Littleton",
+                       "short_name" : "Littleton",
+                       "types" : [ "neighborhood", "political" ]
+                    },
+                    {
+                       "long_name" : "Littleton",
+                       "short_name" : "Littleton",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Grafton County",
+                       "short_name" : "Grafton County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "New Hampshire",
+                       "short_name" : "NH",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "03561",
+                       "short_name" : "03561",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "123 Main Street, Littleton, NH 03561, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 44.3069916,
+                          "lng" : -71.7742476
+                       },
+                       "southwest" : {
+                          "lat" : 44.3069789,
+                          "lng" : -71.77425289999999
+                       }
+                    },
+                    "location" : {
+                       "lat" : 44.3069789,
+                       "lng" : -71.77425289999999
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 44.3083342302915,
+                          "lng" : -71.77290126970848
+                       },
+                       "southwest" : {
+                          "lat" : 44.3056362697085,
+                          "lng" : -71.7755992302915
+                       }
+                    }
+                 },
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "123",
+                       "short_name" : "123",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Main Street",
+                       "short_name" : "Main St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Billings",
+                       "short_name" : "Billings",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Yellowstone County",
+                       "short_name" : "Yellowstone County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Montana",
+                       "short_name" : "MT",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "59101",
+                       "short_name" : "59101",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "123 Main Street, Billings, MT 59101, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 45.7947144,
+                          "lng" : -108.4812232
+                       },
+                       "southwest" : {
+                          "lat" : 45.7947142,
+                          "lng" : -108.4812417
+                       }
+                    },
+                    "location" : {
+                       "lat" : 45.7947144,
+                       "lng" : -108.4812232
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 45.79606328029151,
+                          "lng" : -108.4798834697085
+                       },
+                       "southwest" : {
+                          "lat" : 45.79336531970851,
+                          "lng" : -108.4825814302915
+                       }
+                    }
+                 },
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "123",
+                       "short_name" : "123",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Main Street",
+                       "short_name" : "Main St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Oakley",
+                       "short_name" : "Oakley",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Contra Costa County",
+                       "short_name" : "Contra Costa County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "California",
+                       "short_name" : "CA",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "94561",
+                       "short_name" : "94561",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "123 Main Street, Oakley, CA 94561, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 38.005041,
+                          "lng" : -121.7505906
+                       },
+                       "southwest" : {
+                          "lat" : 38.0050265,
+                          "lng" : -121.7505915
+                       }
+                    },
+                    "location" : {
+                       "lat" : 38.0050265,
+                       "lng" : -121.7505906
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 38.0063827302915,
+                          "lng" : -121.7492420697085
+                       },
+                       "southwest" : {
+                          "lat" : 38.00368476970851,
+                          "lng" : -121.7519400302915
+                       }
+                    }
+                 },
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "123",
+                       "short_name" : "123",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Main Street",
+                       "short_name" : "Main St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Newport",
+                       "short_name" : "Newport",
+                       "types" : [ "neighborhood", "political" ]
+                    },
+                    {
+                       "long_name" : "Newport",
+                       "short_name" : "Newport",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Penobscot County",
+                       "short_name" : "Penobscot County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Maine",
+                       "short_name" : "ME",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "04953",
+                       "short_name" : "04953",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "123 Main Street, Newport, ME 04953, USA",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 44.8350612,
+                       "lng" : -69.2774371
+                    },
+                    "location_type" : "ROOFTOP",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 44.83641018029149,
+                          "lng" : -69.2760881197085
+                       },
+                       "southwest" : {
+                          "lat" : 44.8337122197085,
+                          "lng" : -69.27878608029151
+                       }
+                    }
+                 },
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "123",
+                       "short_name" : "123",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Main Street",
+                       "short_name" : "Main St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Elton",
+                       "short_name" : "Elton",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "9",
+                       "short_name" : "9",
+                       "types" : [ "administrative_area_level_3", "political" ]
+                    },
+                    {
+                       "long_name" : "Jefferson Davis Parish",
+                       "short_name" : "Jefferson Davis Parish",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Louisiana",
+                       "short_name" : "LA",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "70532",
+                       "short_name" : "70532",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "123 Main Street, Elton, LA 70532, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 30.4813805,
+                          "lng" : -92.6803862
+                       },
+                       "southwest" : {
+                          "lat" : 30.4813646,
+                          "lng" : -92.6803863
+                       }
+                    },
+                    "location" : {
+                       "lat" : 30.4813646,
+                       "lng" : -92.6803863
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 30.4827215302915,
+                          "lng" : -92.6790372697085
+                       },
+                       "southwest" : {
+                          "lat" : 30.4800235697085,
+                          "lng" : -92.68173523029151
+                       }
+                    }
+                 },
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "123",
+                       "short_name" : "123",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Main Street",
+                       "short_name" : "Main St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Italy",
+                       "short_name" : "Italy",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Ellis County",
+                       "short_name" : "Ellis County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Texas",
+                       "short_name" : "TX",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "76651",
+                       "short_name" : "76651",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "123 Main Street, Italy, TX 76651, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 32.1837565,
+                          "lng" : -96.88681729999999
+                       },
+                       "southwest" : {
+                          "lat" : 32.1837411,
+                          "lng" : -96.88682039999999
+                       }
+                    },
+                    "location" : {
+                       "lat" : 32.1837565,
+                       "lng" : -96.88682039999999
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 32.1850977802915,
+                          "lng" : -96.88546986970849
+                       },
+                       "southwest" : {
+                          "lat" : 32.1823998197085,
+                          "lng" : -96.88816783029151
+                       }
+                    }
+                 },
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "123",
+                       "short_name" : "123",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Main Street",
+                       "short_name" : "Main St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Unity",
+                       "short_name" : "Unity",
+                       "types" : [ "neighborhood", "political" ]
+                    },
+                    {
+                       "long_name" : "Unity",
+                       "short_name" : "Unity",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Waldo County",
+                       "short_name" : "Waldo County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Maine",
+                       "short_name" : "ME",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "04988",
+                       "short_name" : "04988",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "123 Main Street, Unity, ME 04988, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 44.6116142,
+                          "lng" : -69.33389199999999
+                       },
+                       "southwest" : {
+                          "lat" : 44.6116067,
+                          "lng" : -69.33390709999999
+                       }
+                    },
+                    "location" : {
+                       "lat" : 44.6116142,
+                       "lng" : -69.33390709999999
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 44.61295943029149,
+                          "lng" : -69.33255056970849
+                       },
+                       "southwest" : {
+                          "lat" : 44.6102614697085,
+                          "lng" : -69.33524853029151
+                       }
+                    }
+                 },
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "123",
+                       "short_name" : "123",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Main Street",
+                       "short_name" : "Main St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Red Wing",
+                       "short_name" : "Red Wing",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Goodhue County",
+                       "short_name" : "Goodhue County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Minnesota",
+                       "short_name" : "MN",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "55066",
+                       "short_name" : "55066",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "123 Main Street, Red Wing, MN 55066, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 44.56813770000001,
+                          "lng" : -92.5295921
+                       },
+                       "southwest" : {
+                          "lat" : 44.5681245,
+                          "lng" : -92.5295931
+                       }
+                    },
+                    "location" : {
+                       "lat" : 44.5681245,
+                       "lng" : -92.5295931
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 44.5694800802915,
+                          "lng" : -92.52824361970849
+                       },
+                       "southwest" : {
+                          "lat" : 44.5667821197085,
+                          "lng" : -92.5309415802915
+                       }
+                    }
+                 },
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "123",
+                       "short_name" : "123",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Main Street",
+                       "short_name" : "Main St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Norwell",
+                       "short_name" : "Norwell",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Plymouth County",
+                       "short_name" : "Plymouth County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Massachusetts",
+                       "short_name" : "MA",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "02061",
+                       "short_name" : "02061",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "123 Main Street, Norwell, MA 02061, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 42.1580239,
+                          "lng" : -70.83670979999999
+                       },
+                       "southwest" : {
+                          "lat" : 42.1580102,
+                          "lng" : -70.8367106
+                       }
+                    },
+                    "location" : {
+                       "lat" : 42.1580239,
+                       "lng" : -70.8367106
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 42.1593660302915,
+                          "lng" : -70.83536121970849
+                       },
+                       "southwest" : {
+                          "lat" : 42.1566680697085,
+                          "lng" : -70.83805918029151
+                       }
+                    }
+                 },
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "123",
+                       "short_name" : "123",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Main Street",
+                       "short_name" : "Main St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Hartford",
+                       "short_name" : "Hartford",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Geneva County",
+                       "short_name" : "Geneva County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Alabama",
+                       "short_name" : "AL",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "36344",
+                       "short_name" : "36344",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "123 Main Street, Hartford, AL 36344, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 31.1034892,
+                          "lng" : -85.6957788
+                       },
+                       "southwest" : {
+                          "lat" : 31.1034762,
+                          "lng" : -85.69578919999999
+                       }
+                    },
+                    "location" : {
+                       "lat" : 31.1034892,
+                       "lng" : -85.69578919999999
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 31.1048316802915,
+                          "lng" : -85.69443501970851
+                       },
+                       "southwest" : {
+                          "lat" : 31.1021337197085,
+                          "lng" : -85.69713298029151
+                       }
+                    }
+                 },
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "123",
+                       "short_name" : "123",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Main Street",
+                       "short_name" : "Main St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Weaubleau",
+                       "short_name" : "Weaubleau",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Weaubleau",
+                       "short_name" : "Weaubleau",
+                       "types" : [ "administrative_area_level_3", "political" ]
+                    },
+                    {
+                       "long_name" : "Hickory County",
+                       "short_name" : "Hickory County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Missouri",
+                       "short_name" : "MO",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "65774",
+                       "short_name" : "65774",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "123 Main Street, Weaubleau, MO 65774, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 37.8902648,
+                          "lng" : -93.5420891
+                       },
+                       "southwest" : {
+                          "lat" : 37.8902644,
+                          "lng" : -93.5421075
+                       }
+                    },
+                    "location" : {
+                       "lat" : 37.8902648,
+                       "lng" : -93.5421075
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 37.8916135802915,
+                          "lng" : -93.5407493197085
+                       },
+                       "southwest" : {
+                          "lat" : 37.8889156197085,
+                          "lng" : -93.5434472802915
+                       }
+                    }
+                 },
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "123",
+                       "short_name" : "123",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Main Street",
+                       "short_name" : "Main St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Lancaster",
+                       "short_name" : "Lancaster",
+                       "types" : [ "neighborhood", "political" ]
+                    },
+                    {
+                       "long_name" : "Lancaster",
+                       "short_name" : "Lancaster",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Coos County",
+                       "short_name" : "Coos County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "New Hampshire",
+                       "short_name" : "NH",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "03584",
+                       "short_name" : "03584",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "123 Main Street, Lancaster, NH 03584, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 44.4907936,
+                          "lng" : -71.5699327
+                       },
+                       "southwest" : {
+                          "lat" : 44.4907896,
+                          "lng" : -71.56995019999999
+                       }
+                    },
+                    "location" : {
+                       "lat" : 44.4907936,
+                       "lng" : -71.5699327
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 44.4921405802915,
+                          "lng" : -71.56859246970848
+                       },
+                       "southwest" : {
+                          "lat" : 44.48944261970851,
+                          "lng" : -71.5712904302915
+                       }
+                    }
+                 },
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "123",
+                       "short_name" : "123",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Main Street",
+                       "short_name" : "Main St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Wareham Center",
+                       "short_name" : "Wareham Center",
+                       "types" : [ "sublocality", "political" ]
+                    },
+                    {
+                       "long_name" : "Wareham",
+                       "short_name" : "Wareham",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Plymouth County",
+                       "short_name" : "Plymouth County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Massachusetts",
+                       "short_name" : "MA",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "02571",
+                       "short_name" : "02571",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "123 Main Street, Wareham, MA 02571, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 41.7570006,
+                          "lng" : -70.7138391
+                       },
+                       "southwest" : {
+                          "lat" : 41.7569912,
+                          "lng" : -70.7138525
+                       }
+                    },
+                    "location" : {
+                       "lat" : 41.7570006,
+                       "lng" : -70.7138391
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 41.7583448802915,
+                          "lng" : -70.71249681970849
+                       },
+                       "southwest" : {
+                          "lat" : 41.7556469197085,
+                          "lng" : -70.71519478029151
+                       }
+                    }
+                 },
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "123",
+                       "short_name" : "123",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Main Street",
+                       "short_name" : "Main St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Lewiston",
+                       "short_name" : "Lewiston",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Androscoggin County",
+                       "short_name" : "Androscoggin County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Maine",
+                       "short_name" : "ME",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "04240",
+                       "short_name" : "04240",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "123 Main Street, Lewiston, ME 04240, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 44.09785129999999,
+                          "lng" : -70.21921589999999
+                       },
+                       "southwest" : {
+                          "lat" : 44.0978425,
+                          "lng" : -70.21922959999999
+                       }
+                    },
+                    "location" : {
+                       "lat" : 44.0978425,
+                       "lng" : -70.21921589999999
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 44.09919588029149,
+                          "lng" : -70.21787376970849
+                       },
+                       "southwest" : {
+                          "lat" : 44.09649791970849,
+                          "lng" : -70.2205717302915
+                       }
+                    }
+                 },
+                 "types" : [ "street_address" ]
+              }
+           ],
+           "status" : "OK"
+        }
+    http_version: 
+  recorded_at: Tue, 10 Jun 2014 04:50:56 GMT
+recorded_with: VCR 2.9.2

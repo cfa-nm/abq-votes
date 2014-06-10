@@ -1,10 +1,10 @@
 require 'spec_helper'
 
-describe Voter, :type => :model do
+describe Voter do
   subject(:voter) { build_stubbed :voter,
                     address: '2300 Central Ave', zip: 87106 }
 
-  describe '.polling_location' do
+  describe '.polling_location', :vcr do
     let!(:nearest)  { create :polling_location,
                       address: '2400 Central Ave', zip: 87106 }
     let!(:farthest) { create :polling_location,

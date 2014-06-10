@@ -1,7 +1,7 @@
 require 'spec_helper'
 require 'polling_location_importer'
 
-describe PollingLocationImporter do
+describe PollingLocationImporter, :vcr do
   let(:data) { <<-JSON }
     { "features": [{
       "attributes": {

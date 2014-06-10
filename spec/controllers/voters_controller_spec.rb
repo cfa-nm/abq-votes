@@ -1,10 +1,10 @@
 require 'spec_helper'
 
-describe VotersController, type: :controller do
+describe VotersController do
   let(:voter_attributes) { attributes_for :voter }
 
   describe 'GET #new' do
-    before do 
+    before do
       get :new
     end
 
@@ -13,9 +13,9 @@ describe VotersController, type: :controller do
     end
   end
 
-  describe 'POST #create' do
+  describe 'POST #create', :vcr do
     context 'with valid params' do
-      it 'creates a new voter' do 
+      it 'creates a new voter' do
         expect {
           post :create, voter: voter_attributes
         }.to change{ Voter.count }.by 1

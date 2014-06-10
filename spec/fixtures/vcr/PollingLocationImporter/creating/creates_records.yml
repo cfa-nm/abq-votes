@@ -1,0 +1,193 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://maps.googleapis.com/maps/api/geocode/json?address=10500%20Copper%20Ave%20NE&language=en&sensor=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 10 Jun 2014 04:52:25 GMT
+      Expires:
+      - Wed, 11 Jun 2014 04:52:25 GMT
+      Cache-Control:
+      - public, max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Alternate-Protocol:
+      - 80:quic
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "10500",
+                       "short_name" : "10500",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Brown Mackie College - Albuquerque",
+                       "short_name" : "Brown Mackie College - Albuquerque",
+                       "types" : [ "establishment" ]
+                    },
+                    {
+                       "long_name" : "Copper Avenue",
+                       "short_name" : "Copper Ave",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "The Presidio",
+                       "short_name" : "The Presidio",
+                       "types" : [ "neighborhood", "political" ]
+                    },
+                    {
+                       "long_name" : "Albuquerque",
+                       "short_name" : "Albuquerque",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Bernalillo County",
+                       "short_name" : "Bernalillo County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "New Mexico",
+                       "short_name" : "NM",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "87123",
+                       "short_name" : "87123",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "10500 Copper Avenue, Brown Mackie College - Albuquerque, Albuquerque, NM 87123, USA",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 35.0796303,
+                       "lng" : -106.5272527
+                    },
+                    "location_type" : "ROOFTOP",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 35.0809792802915,
+                          "lng" : -106.5259037197085
+                       },
+                       "southwest" : {
+                          "lat" : 35.0782813197085,
+                          "lng" : -106.5286016802915
+                       }
+                    }
+                 },
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "10500",
+                       "short_name" : "10500",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Copper Avenue Northeast",
+                       "short_name" : "Copper Ave NE",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "South Los Altos",
+                       "short_name" : "South Los Altos",
+                       "types" : [ "neighborhood", "political" ]
+                    },
+                    {
+                       "long_name" : "Albuquerque",
+                       "short_name" : "Albuquerque",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Bernalillo County",
+                       "short_name" : "Bernalillo County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "New Mexico",
+                       "short_name" : "NM",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "87123",
+                       "short_name" : "87123",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "10500 Copper Avenue Northeast, Albuquerque, NM 87123, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 35.0800516,
+                          "lng" : -106.5324028
+                       },
+                       "southwest" : {
+                          "lat" : 35.0800365,
+                          "lng" : -106.532403
+                       }
+                    },
+                    "location" : {
+                       "lat" : 35.0800365,
+                       "lng" : -106.5324028
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 35.0813930302915,
+                          "lng" : -106.5310539197085
+                       },
+                       "southwest" : {
+                          "lat" : 35.0786950697085,
+                          "lng" : -106.5337518802915
+                       }
+                    }
+                 },
+                 "partial_match" : true,
+                 "types" : [ "street_address" ]
+              }
+           ],
+           "status" : "OK"
+        }
+    http_version: 
+  recorded_at: Tue, 10 Jun 2014 04:52:25 GMT
+recorded_with: VCR 2.9.2

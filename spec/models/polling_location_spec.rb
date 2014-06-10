@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe PollingLocation, :type => :model do
+describe PollingLocation do
   describe '#early_voting?' do
     context 'with early voting' do
       subject { build_stubbed(:polling_location, :early_voting) }

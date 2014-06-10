@@ -51,4 +51,6 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'capybara'
   gem 'formulaic'
+  gem 'webmock'
+  gem 'vcr'
 end

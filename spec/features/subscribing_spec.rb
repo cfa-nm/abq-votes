@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-feature 'Subscribing' do
+feature 'Subscribing', :vcr do
   let(:voter_attributes) { attributes_for(:voter) }
   scenario 'With all information' do
     visit root_path
