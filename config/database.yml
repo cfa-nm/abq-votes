@@ -79,7 +79,4 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: abq-votes_production
-  username: abq-votes
-  password: <%= ENV['ABQ-VOTES_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>

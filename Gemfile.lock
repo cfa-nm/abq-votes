@@ -46,6 +46,9 @@ GEM
       execjs
     coffee-script-source (1.7.0)
     diff-lcs (1.2.5)
+    dotenv (0.11.1)
+      dotenv-deployment (~> 0.0.2)
+    dotenv-deployment (0.0.2)
     erubis (2.7.0)
     execjs (2.1.0)
     factory_girl (4.4.0)
@@ -53,6 +56,9 @@ GEM
     factory_girl_rails (4.4.1)
       factory_girl (~> 4.4.0)
       railties (>= 3.0.0)
+    foreman (0.71.0)
+      dotenv (~> 0.11.1)
+      thor (~> 0.19.1)
     formulaic (0.0.6)
       activesupport
       capybara
@@ -66,6 +72,7 @@ GEM
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.8.1)
+    kgio (2.9.2)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
@@ -94,11 +101,17 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 4.1.1)
       sprockets-rails (~> 2.0)
+    rails_12factor (0.0.2)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.2)
+    rails_stdout_logging (0.0.3)
     railties (4.1.1)
       actionpack (= 4.1.1)
       activesupport (= 4.1.1)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
+    raindrops (0.13.0)
     rake (10.3.2)
     rdoc (4.1.1)
       json (~> 1.4)
@@ -155,6 +168,10 @@ GEM
     uglifier (2.5.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    unicorn (4.8.3)
+      kgio (~> 2.6)
+      rack
+      raindrops (~> 0.7)
     xpath (2.0.0)
       nokogiri (~> 1.3)
 
@@ -166,6 +183,7 @@ DEPENDENCIES
   capybara
   coffee-rails (~> 4.0.0)
   factory_girl_rails
+  foreman
   formulaic
   jbuilder (~> 2.0)
   jquery-rails
@@ -173,6 +191,7 @@ DEPENDENCIES
   normalize-rails
   pg
   rails (= 4.1.1)
+  rails_12factor
   rspec-rails (~> 3.0.0.rc1)
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
@@ -181,3 +200,4 @@ DEPENDENCIES
   spring-commands-rspec
   turbolinks
   uglifier (>= 1.3.0)
+  unicorn
