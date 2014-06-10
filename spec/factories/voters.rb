@@ -5,5 +5,6 @@ FactoryGirl.define do
     sequence(:name) { |u| "Voter ##{u}" }
     email { "#{name.parameterize}@example.com" }
     birthday { 40.years.ago }
+    address '123 Main St.'
   end
 end

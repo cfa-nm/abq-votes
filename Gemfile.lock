@@ -63,6 +63,7 @@ GEM
       activesupport
       capybara
       i18n
+    geocoder (1.2.1)
     hike (1.2.3)
     i18n (0.6.9)
     jquery-rails (3.1.0)
@@ -175,6 +176,7 @@ DEPENDENCIES
   factory_girl_rails
   foreman
   formulaic
+  geocoder
   jquery-rails
   neat
   normalize-rails
